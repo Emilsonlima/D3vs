@@ -26,7 +26,7 @@
 
     <TextView
         android:id="@+id/vm_com"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="40dp"
@@ -39,8 +39,9 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btGoogle"
-        android:layout_width="314dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="49dp"
         android:background="@color/verdedev"
@@ -48,46 +49,48 @@
         android:textColor="@color/white"
         app:layout_constraintCircleRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Entrar"
         tools:ignore="TextContrastCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Entrar"
-        android:layout_width="314dp"
+        android:layout_width="0dp"
         android:layout_height="45dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="47dp"
         android:layout_marginEnd="49dp"
         android:background="@color/verdedev"
-        android:text="@string/criar_conta"
 
+        android:text="@string/criar_conta"
         android:textColor="@color/white"
         app:layout_constraintCircleRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ds_senha"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <EditText
         android:id="@+id/ds_email"
-        android:layout_width="304dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="45dp"
-        android:layout_marginEnd="54dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:hint="@string/digite_seu_email"
         android:inputType="textWebEmailAddress"
-        android:textColor="@color/verdedev"
+
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
         android:id="@+id/ds_senha"
-        android:layout_width="304dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="54dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
@@ -95,16 +98,17 @@
         android:inputType="textPassword"
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ds_email" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="271dp"
+        android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="70dp"
         android:contentDescription="@string/todo1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:srcCompat="@drawable/personagem" />
 

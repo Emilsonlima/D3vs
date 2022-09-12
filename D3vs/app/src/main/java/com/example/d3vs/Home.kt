@@ -11,10 +11,7 @@ import com.example.d3vs.fragments.HistoricFragment
 import com.example.d3vs.fragments.PesquisaFragment
 import com.example.d3vs.fragments.homeFragment
 import com.example.d3vs.model.cardTutor
-
-
-
-
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 public class Home : AppCompatActivity() {
@@ -22,6 +19,8 @@ public class Home : AppCompatActivity() {
     private val homefragment = homeFragment()
     private val pesquisafragment = PesquisaFragment()
     private val historicfragment = HistoricFragment()
+    private var bottom_navigation: BottomNavigationView? = null;
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,8 +29,8 @@ public class Home : AppCompatActivity() {
         supportActionBar!!.hide()
         replaceFragment(homefragment)
 
-        //Era pra reconhecer, não to entendento o pq de não estar ok.
-        bottom_navigation.setOnNavigationItemSelectedListener{
+
+        bottom_navigation!!.setOnItemSelectedListener{
             when(it.itemId){
                 R.drawable.ic_home -> replaceFragment(homefragment)
                 R.drawable.ic_search -> replaceFragment(pesquisafragment)

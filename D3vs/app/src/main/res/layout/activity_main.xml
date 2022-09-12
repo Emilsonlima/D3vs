@@ -4,28 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     android:layout_gravity="center"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="63dp"
+        android:gravity="center"
         android:text="@string/d3vs"
         android:textColor="#11DD62"
         android:textSize="65sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imagehome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imagehome"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="63dp"
         android:background="#8F11DD62"
@@ -37,7 +41,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btregistrar"
-        android:layout_width="275dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="54dp"
@@ -50,11 +54,12 @@
         app:layout_constraintCircleRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagehome" />
+        app:layout_constraintTop_toBottomOf="@+id/imagehome"
+        tools:ignore="TextContrastCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btEntrar"
-        android:layout_width="275dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="26dp"
@@ -67,6 +72,7 @@
         app:layout_constraintCircleRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btregistrar" />
+        app:layout_constraintTop_toBottomOf="@+id/btregistrar"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

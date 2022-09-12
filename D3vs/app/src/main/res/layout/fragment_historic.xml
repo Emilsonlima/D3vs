@@ -14,6 +14,7 @@
         android:contentDescription="@string/todo7"
         android:src="@drawable/ic_menu_book"
         tools:ignore="ImageContrastCheck" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

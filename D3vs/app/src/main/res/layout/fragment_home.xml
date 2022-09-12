@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SearchFragment">
+    tools:context=".fragments.homeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,8 +12,9 @@
 
         <TextView
             android:id="@+id/nmUsuario"
-            android:layout_width="209dp"
+            android:layout_width="0dp"
             android:layout_height="28dp"
+            android:layout_marginStart="102dp"
             android:layout_marginTop="304dp"
             android:layout_marginEnd="100dp"
             android:text="@string/nome_do_usuario"
@@ -21,6 +22,7 @@
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -29,7 +31,9 @@
             android:layout_height="19dp"
             android:layout_marginStart="29dp"
             android:layout_marginTop="18dp"
+            android:layout_marginEnd="28dp"
             android:text="@string/interesse_1"
+            app:layout_constraintEnd_toStartOf="@+id/Interesse2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/divider" />
 
@@ -39,7 +43,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginTop="18dp"
+            android:layout_marginEnd="28dp"
             android:text="@string/interesse_2"
+            app:layout_constraintEnd_toStartOf="@+id/interesse3"
             app:layout_constraintStart_toEndOf="@+id/Interesse1"
             app:layout_constraintTop_toBottomOf="@+id/divider" />
 
@@ -47,40 +53,47 @@
             android:id="@+id/interesse3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
             android:layout_marginTop="18dp"
             android:layout_marginEnd="113dp"
             android:text="@string/interesse_3"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Interesse2"
             app:layout_constraintTop_toBottomOf="@+id/divider" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="254dp"
             android:layout_marginTop="25dp"
+            android:contentDescription="@string/todo6"
             android:src="@drawable/avatar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/todo6" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/emailIusario"
-            android:layout_width="174dp"
+            android:layout_width="0dp"
             android:layout_height="24dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="23dp"
+            android:layout_marginEnd="35dp"
             android:text="@string/email_do_usuario"
+            app:layout_constraintEnd_toStartOf="@+id/IdadeUs"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nmUsuario" />
 
         <TextView
             android:id="@+id/IdadeUs"
-            android:layout_width="110dp"
+            android:layout_width="0dp"
             android:layout_height="26dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="23dp"
             android:layout_marginEnd="56dp"
             android:text="@string/idade_do_usuario"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/emailIusario"
             app:layout_constraintTop_toBottomOf="@+id/nmUsuario" />
 
         <View
@@ -95,13 +108,15 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/edtperfil"
-            android:layout_width="173dp"
+            android:layout_width="0dp"
             android:layout_height="56dp"
+            android:layout_marginStart="119dp"
             android:layout_marginTop="63dp"
             android:layout_marginEnd="119dp"
             android:background="@color/verdedev"
             android:text="@string/editar_perfil"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Interesse2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

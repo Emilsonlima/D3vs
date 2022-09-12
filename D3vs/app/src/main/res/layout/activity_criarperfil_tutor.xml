@@ -9,7 +9,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar4"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
@@ -20,47 +20,51 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@android:drawable/ic_menu_revert"/>
+        app:navigationIcon="@android:drawable/ic_menu_revert" />
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Tutor"
-        android:layout_width="105dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="58dp"
         android:background="@color/verdedev"
         android:text="@string/tutor"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/estudante"
         app:layout_constraintTop_toBottomOf="@+id/toolbar4"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/estudante"
-        android:layout_width="105dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
         android:layout_marginStart="58dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="85dp"
         android:background="@color/verdedev"
         android:text="@string/estudante"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/Tutor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar4"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="102dp"
+        android:layout_width="0dp"
         android:layout_height="106dp"
         android:layout_marginStart="148dp"
+        android:layout_marginTop="224dp"
         android:layout_marginEnd="148dp"
-        android:layout_marginBottom="504dp"
         android:contentDescription="@string/todo5"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
         tools:srcCompat="@drawable/ic_person" />
 
@@ -69,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="156dp"
+        android:layout_marginEnd="148dp"
         android:text="@string/criar_perfil"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -80,8 +84,9 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="340dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="36dp"
         android:autofillHints=""
@@ -90,28 +95,32 @@
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
         tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextcpf"
-        android:layout_width="155dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="14dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/digite_seu_cpf"
         android:inputType="number"
         android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextDate"
-        android:layout_width="170dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="36dp"
         android:autofillHints=""
@@ -120,93 +129,91 @@
         android:inputType="date"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextcpf"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextqualificacao"
-        android:layout_width="157dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="17dp"
+        android:layout_marginEnd="219dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/qualifica_es"
         android:inputType="textPersonName"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextcpf"
         tools:ignore="TextContrastCheck" />
 
     <EditText
-        android:id="@+id/editTextLinguagens"
-        android:layout_width="171dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="35dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/linguagens"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
-        tools:ignore="TextContrastCheck" />
-
-    <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="158dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="9dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextqualificacao" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="172dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="34dp"
+        android:layout_marginBottom="8dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/senha"
         android:inputType="textPassword"
         android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLinguagens" />
+        app:layout_constraintStart_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btSalvar"
-        android:layout_width="123dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="41dp"
         android:layout_marginEnd="144dp"
-        android:layout_marginBottom="93dp"
         android:background="@color/verdedev"
         android:text="@string/salvar"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
         tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="342dp"
+        android:layout_width="0dp"
         android:layout_height="70dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="41dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/descri_o"
         android:inputType="textMultiLine"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btSalvar"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
