@@ -7,13 +7,17 @@
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/activity_criar_perfil.xml" value="0.264" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/activity_criarperfil_tutor.xml" value="0.264" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/activity_home_tutor.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/activity_main.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/content_cadastro.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/fragment_carteira.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/fragment_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/fragment_first.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/fragment_historic.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/fragment_historictutor.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/fragment_home.xml" value="0.4" />
+        <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/fragment_hometutor.xml" value="0.38915470494417864" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/fragment_pesquisa.xml" value="0.2" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/fragment_search.xml" value="0.264" />
@@ -21,6 +25,7 @@
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/layout/tutores_item.xml" value="0.253125" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Milso/AndroidStudioProjects/D3vs/app/src/main/res/menu/bottom_navigation_menu_tutor.xml" value="0.20863616930312098" />
       </map>
     </option>
   </component>

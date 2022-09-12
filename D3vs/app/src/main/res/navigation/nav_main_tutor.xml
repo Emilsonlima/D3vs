@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_tutor"
+    app:startDestination="@+id/menu_perfil_tutor">
+
+    <fragment
+        android:id="@+id/menu_perfil_tutor"
+        android:name="com.example.d3vs.fragments.hometutorFragment"
+        android:label="fragment_hometutor"
+        tools:layout="@layout/fragment_hometutor" />
+    <fragment
+        android:id="@+id/menu_historico"
+        android:name="com.example.d3vs.fragments.HistorictutorFragment"
+        android:label="fragment_historictutor"
+        tools:layout="@layout/fragment_historictutor" />
+    <fragment
+        android:id="@+id/menu_carteira"
+        android:name="com.example.d3vs.fragments.CarteiraFragment"
+        android:label="fragment_carteira"
+        tools:layout="@layout/fragment_carteira" />
+</navigation>
