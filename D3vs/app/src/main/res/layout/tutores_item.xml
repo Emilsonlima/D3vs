@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
@@ -59,5 +61,17 @@
 
 
         />
+
+    <TextView
+        android:id="@+id/dsnivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Nivel Tutor"
+        app:layout_constraintStart_toEndOf="@+id/FotoTutor"
+        app:layout_constraintTop_toBottomOf="@+id/des_tutor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
