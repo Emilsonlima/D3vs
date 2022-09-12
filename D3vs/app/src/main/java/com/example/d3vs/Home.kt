@@ -39,34 +39,12 @@ public class Home : AppCompatActivity() {
             true
         }
 
-
-
-        //RecyclerView da tela Pesquisa
-
-        val  recyclerView_tutores = findViewById<RecyclerView>(R.id.recyclerView_tutores)
-        recyclerView_tutores.layoutManager = LinearLayoutManager(this)
-        recyclerView_tutores.setHasFixedSize(true)
-
-        //Configurar o Adapter e criar lista de objetos
-        val listatutores: MutableList<cardTutor> = mutableListOf()
-        val adaptertutor = AdapterCard(this, listatutores )
-        recyclerView_tutores.adapter = adaptertutor
-
-        val tutor1 = cardTutor(
-            R.drawable.avattutor,
-            "Tutor de Teste",
-            "Descrição de um tutor para testes",
-            "Java, Kotlin, C++",
-            "Nível 3"
-        )
-        listatutores.add(tutor1)
     }
 
     private fun replaceFragment(fragment: Fragment){
-        if (fragment != null){
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container,fragment)
-            transaction.commit()
-        }
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.layout_recycler,fragment)
+        fragmentTransaction.commit()
     }
 }
