@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/menu_perfil">
+
+    <fragment
+        android:id="@+id/menu_perfil"
+        android:name="com.rocketteam.d3vs.activities.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/menu_busca"
+        android:name="com.rocketteam.d3vs.activities.fragments.PesquisaFragment"
+        android:label="fragment_pesquisa"
+        tools:layout="@layout/fragment_pesquisa" />
+    <fragment
+        android:id="@+id/menu_historico"
+        android:name="com.rocketteam.d3vs.activities.fragments.HistoricFragment"
+        android:label="fragment_historic"
+        tools:layout="@layout/fragment_historic" />
+</navigation>

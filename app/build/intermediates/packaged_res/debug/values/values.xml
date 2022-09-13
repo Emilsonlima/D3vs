@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="verdedev">#11DD62</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <string name="app_name">D3vs</string>
+    <string name="bem_vindo_a_de_volta">Bem-vindo(a) de volta</string>
+    <string name="continuar_com_o_goggle">Continuar com o Goggle</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="criar_perfil">Criar Perfil</string>
+    <string name="crie_seu_perfil">Crie seu perfil</string>
+    <string name="d3vs">D3VS</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="descri_o">Descrição</string>
+    <string name="digite_seu_cpf">Digite seu CPF</string>
+    <string name="digite_seu_email">Digite seu email</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="email">Email</string>
+    <string name="email_do_usuario">Email do usuario</string>
+    <string name="encontre_um_tutor">Encontre um Tutor</string>
+    <string name="entrar">Entrar</string>
+    <string name="entrar1">Entrar</string>
+    <string name="estudante">Estudante</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="idade_do_usuario">Idade do usuario</string>
+    <string name="interesse">Interesse</string>
+    <string name="interesse_1">Interesse 1</string>
+    <string name="interesse_2">Interesse 2</string>
+    <string name="interesse_3">Interesse 3</string>
+    <string name="linguagens">Linguagens</string>
+    <string name="menu_busca">Busca</string>
+    <string name="menu_historico">Historico</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="next">Next</string>
+    <string name="nome_do_usuario">Nome do usuario</string>
+    <string name="ou">OU</string>
+    <string name="previous">Previous</string>
+    <string name="qualifica_es">Qualificações</string>
+    <string name="registrar">Registrar</string>
+    <string name="registrar2">Registrar</string>
+    <string name="salvar">Salvar</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="sem_historico">Sem Historico</string>
+    <string name="senha">Senha</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
+    <string name="todo6">TODO</string>
+    <string name="todo7">TODO</string>
+    <string name="tutor">Tutor</string>
+    <string name="vamos_come_ar">Vamos Começar</string>
+    <style name="Theme.D3vs" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/verdedev</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="Theme.D3vs.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.D3vs.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.D3vs.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

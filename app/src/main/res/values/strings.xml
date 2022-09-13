@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">D3vs</string>
+    <string name="registrar">Registrar</string>
+    <string name="d3vs">D3VS</string>
+    <string name="todo">TODO</string>
+    <string name="registrar2">Registrar</string>
+    <string name="entrar">Entrar</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="ou">OU</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="continuar_com_o_goggle">Continuar com o Goggle</string>
+    <string name="digite_seu_email">Digite seu email</string>
+    <string name="todo1">TODO</string>
+    <string name="vamos_come_ar">Vamos Começar</string>
+    <string name="bem_vindo_a_de_volta">Bem-vindo(a) de volta</string>
+    <string name="entrar1">Entrar</string>
+    <string name="todo4">TODO</string>
+    <string name="crie_seu_perfil">Crie seu perfil</string>
+    <string name="estudante">Estudante</string>
+    <string name="tutor">Tutor</string>
+    <string name="todo5">TODO</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="digite_seu_cpf">Digite seu CPF</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="interesse">Interesse</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="criar_perfil">Criar Perfil</string>
+    <string name="salvar">Salvar</string>
+    <string name="qualifica_es">Qualificações</string>
+    <string name="linguagens">Linguagens</string>
+    <string name="descri_o">Descrição</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_busca">Busca</string>
+    <string name="menu_historico">Historico</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nome_do_usuario">Nome do usuario</string>
+    <string name="email_do_usuario">Email do usuario</string>
+    <string name="idade_do_usuario">Idade do usuario</string>
+    <string name="interesse_1">Interesse 1</string>
+    <string name="interesse_2">Interesse 2</string>
+    <string name="interesse_3">Interesse 3</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="todo6">TODO</string>
+    <string name="sem_historico">Sem Historico</string>
+    <string name="todo7">TODO</string>
+    <string name="encontre_um_tutor">Encontre um Tutor</string>
+</resources>

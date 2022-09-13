@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_avatar.png.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\avatar.png"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\layout_tutores_item.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\layout\\tutores_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_hack.jpg.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\hack.jpg"
+    },
+    {
+        "merged": "com.rocketteam.d3vs.app-merged_res-50:/layout_fragment_pesquisa.xml.flat",
+        "source": "com.rocketteam.d3vs.app-main-52:/layout/fragment_pesquisa.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\layout_activity_cadastro.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\layout\\activity_cadastro.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\layout_fragment_pesquisa.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\layout\\fragment_pesquisa.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\navigation_nav_main.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\navigation\\nav_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_personagem.jpg.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\personagem.jpg"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\layout_activity_criar_perfil.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\layout\\activity_criar_perfil.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\menu_bottom_navigation_menu.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\menu\\bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_dev.png.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\dev.png"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\layout_activity_criarperfil_tutor.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\layout\\activity_criarperfil_tutor.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\ic_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\layout_fragment_historic.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\layout\\fragment_historic.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_avattutor.png.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\avattutor.png"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-merged_res-50:\\drawable_ic_menu_book.xml.flat",
+        "source": "C:\\Users\\thiag\\.gradle\\daemon\\7.3.3\\com.rocketteam.d3vs.app-main-52:\\drawable\\ic_menu_book.xml"
+    }
+]
