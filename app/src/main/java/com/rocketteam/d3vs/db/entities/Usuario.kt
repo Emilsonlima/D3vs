@@ -8,7 +8,7 @@ import java.time.LocalDate
 @Entity(tableName="t_user")
 data class Usuario(@PrimaryKey(autoGenerate=true)
                    @ColumnInfo(name="id_user") var Id: Int = 0,
-                   @ColumnInfo(name="discriminacao") var Discriminacao: String,
+                   @ColumnInfo(name="discriminacao") var Discriminacao: String? = null,
                    @ColumnInfo(name="nm_usuario") var Nome: String,
                    @ColumnInfo(name="dt_nascimento") var DtNasc: LocalDate? = null,
                    @ColumnInfo(name="nr_cpf") var Cpf: String? = null,

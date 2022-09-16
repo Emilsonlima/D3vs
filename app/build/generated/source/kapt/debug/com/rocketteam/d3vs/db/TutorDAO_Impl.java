@@ -319,7 +319,7 @@ public final class TutorDAO_Impl extends TutorDAO {
 
   @Override
   public UsuarioTutor findById(final int Id) {
-    final String _sql = "select * from t_user, t_prof where id_user = ?";
+    final String _sql = "select * from t_user, t_prof where id_user = ? and discriminacao = 'prof'";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     _statement.bindLong(_argIndex, Id);
@@ -380,8 +380,74 @@ public final class TutorDAO_Impl extends TutorDAO {
   }
 
   @Override
+  public UsuarioTutor findByEmail(final String Email) {
+    final String _sql = "select * from t_user u inner join t_prof a on (a.t_user_id_user = u.id_user) where ds_email = ? and discriminacao = 'prof'";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    if (Email == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, Email);
+    }
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, true, null);
+    try {
+      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "t_user_id_user");
+      final int _cursorIndexOfDescricao = CursorUtil.getColumnIndexOrThrow(_cursor, "ds_prof");
+      final LongSparseArray<Usuario> _collectionUsuario = new LongSparseArray<Usuario>();
+      final LongSparseArray<ArrayList<Qualificacoes>> _collectionQualificacoes = new LongSparseArray<ArrayList<Qualificacoes>>();
+      while (_cursor.moveToNext()) {
+        final long _tmpKey = _cursor.getLong(_cursorIndexOfId);
+        _collectionUsuario.put(_tmpKey, null);
+        final long _tmpKey_1 = _cursor.getLong(_cursorIndexOfId);
+        ArrayList<Qualificacoes> _tmpQualificacoesCollection = _collectionQualificacoes.get(_tmpKey_1);
+        if (_tmpQualificacoesCollection == null) {
+          _tmpQualificacoesCollection = new ArrayList<Qualificacoes>();
+          _collectionQualificacoes.put(_tmpKey_1, _tmpQualificacoesCollection);
+        }
+      }
+      _cursor.moveToPosition(-1);
+      __fetchRelationshiptUserAscomRocketteamD3vsDbEntitiesUsuario(_collectionUsuario);
+      __fetchRelationshiptQualificacoesAscomRocketteamD3vsDbEntitiesQualificacoes(_collectionQualificacoes);
+      final UsuarioTutor _result;
+      if(_cursor.moveToFirst()) {
+        final Tutor _tmpTutor;
+        if (! (_cursor.isNull(_cursorIndexOfId) && _cursor.isNull(_cursorIndexOfDescricao))) {
+          final int _tmpId;
+          _tmpId = _cursor.getInt(_cursorIndexOfId);
+          final String _tmpDescricao;
+          if (_cursor.isNull(_cursorIndexOfDescricao)) {
+            _tmpDescricao = null;
+          } else {
+            _tmpDescricao = _cursor.getString(_cursorIndexOfDescricao);
+          }
+          _tmpTutor = new Tutor(_tmpId,_tmpDescricao);
+        }  else  {
+          _tmpTutor = null;
+        }
+        Usuario _tmpUsuario = null;
+        final long _tmpKey_2 = _cursor.getLong(_cursorIndexOfId);
+        _tmpUsuario = _collectionUsuario.get(_tmpKey_2);
+        ArrayList<Qualificacoes> _tmpQualificacoesCollection_1 = null;
+        final long _tmpKey_3 = _cursor.getLong(_cursorIndexOfId);
+        _tmpQualificacoesCollection_1 = _collectionQualificacoes.get(_tmpKey_3);
+        if (_tmpQualificacoesCollection_1 == null) {
+          _tmpQualificacoesCollection_1 = new ArrayList<Qualificacoes>();
+        }
+        _result = new UsuarioTutor(_tmpTutor,_tmpUsuario,_tmpQualificacoesCollection_1);
+      } else {
+        _result = null;
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
   public List<UsuarioTutor> listAll() {
-    final String _sql = "select * from t_user, t_prof";
+    final String _sql = "select * from t_user, t_prof where discriminacao = 'prof'";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     __db.assertNotSuspendingTransaction();
     final Cursor _cursor = DBUtil.query(__db, _statement, true, null);

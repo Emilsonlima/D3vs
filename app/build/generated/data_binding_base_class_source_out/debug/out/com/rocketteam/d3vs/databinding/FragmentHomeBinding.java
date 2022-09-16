@@ -28,9 +28,6 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView Interesse1;
 
   @NonNull
-  public final TextView Interesse2;
-
-  @NonNull
   public final View divider;
 
   @NonNull
@@ -43,24 +40,18 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ImageView imageView3;
 
   @NonNull
-  public final TextView interesse3;
-
-  @NonNull
   public final TextView nmUsuario;
 
   private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull TextView IdadeUs,
-      @NonNull TextView Interesse1, @NonNull TextView Interesse2, @NonNull View divider,
-      @NonNull AppCompatButton edtperfil, @NonNull TextView emailIusario,
-      @NonNull ImageView imageView3, @NonNull TextView interesse3, @NonNull TextView nmUsuario) {
+      @NonNull TextView Interesse1, @NonNull View divider, @NonNull AppCompatButton edtperfil,
+      @NonNull TextView emailIusario, @NonNull ImageView imageView3, @NonNull TextView nmUsuario) {
     this.rootView = rootView;
     this.IdadeUs = IdadeUs;
     this.Interesse1 = Interesse1;
-    this.Interesse2 = Interesse2;
     this.divider = divider;
     this.edtperfil = edtperfil;
     this.emailIusario = emailIusario;
     this.imageView3 = imageView3;
-    this.interesse3 = interesse3;
     this.nmUsuario = nmUsuario;
   }
 
@@ -103,12 +94,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.Interesse2;
-      TextView Interesse2 = ViewBindings.findChildViewById(rootView, id);
-      if (Interesse2 == null) {
-        break missingId;
-      }
-
       id = R.id.divider;
       View divider = ViewBindings.findChildViewById(rootView, id);
       if (divider == null) {
@@ -133,20 +118,14 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.interesse3;
-      TextView interesse3 = ViewBindings.findChildViewById(rootView, id);
-      if (interesse3 == null) {
-        break missingId;
-      }
-
       id = R.id.nmUsuario;
       TextView nmUsuario = ViewBindings.findChildViewById(rootView, id);
       if (nmUsuario == null) {
         break missingId;
       }
 
-      return new FragmentHomeBinding((FrameLayout) rootView, IdadeUs, Interesse1, Interesse2,
-          divider, edtperfil, emailIusario, imageView3, interesse3, nmUsuario);
+      return new FragmentHomeBinding((FrameLayout) rootView, IdadeUs, Interesse1, divider,
+          edtperfil, emailIusario, imageView3, nmUsuario);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

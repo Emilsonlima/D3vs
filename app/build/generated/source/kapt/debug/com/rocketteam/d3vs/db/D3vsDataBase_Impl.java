@@ -36,17 +36,17 @@ public final class D3vsDataBase_Impl extends D3vsDataBase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(8) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(9) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `t_user` (`id_user` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `discriminacao` TEXT NOT NULL, `nm_usuario` TEXT NOT NULL, `dt_nascimento` TEXT, `nr_cpf` TEXT, `ds_email` TEXT NOT NULL, `ds_senha` TEXT NOT NULL, `googleauth` TEXT)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `t_user` (`id_user` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `discriminacao` TEXT, `nm_usuario` TEXT NOT NULL, `dt_nascimento` TEXT, `nr_cpf` TEXT, `ds_email` TEXT NOT NULL, `ds_senha` TEXT NOT NULL, `googleauth` TEXT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `t_aluno` (`t_user_id_user` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `t_prof` (`t_user_id_user` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `ds_prof` TEXT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `t_interesses` (`id_interesses` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `t_aluno_t_user_id_user` INTEGER NOT NULL, `ds_interesse` TEXT NOT NULL, FOREIGN KEY(`t_aluno_t_user_id_user`) REFERENCES `t_user`(`id_user`) ON UPDATE NO ACTION ON DELETE NO ACTION )");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `t_qualificacoes` (`id_qualificacoes` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `t_prof_t_user_id_user` INTEGER NOT NULL, `ds_linguagem` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `t_aula` (`id_aula` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `t_aluno_t_user_id_user` INTEGER NOT NULL, `t_prof_t_user_id_user` INTEGER NOT NULL, FOREIGN KEY(`t_aluno_t_user_id_user`) REFERENCES `t_user`(`id_user`) ON UPDATE NO ACTION ON DELETE NO ACTION , FOREIGN KEY(`t_prof_t_user_id_user`) REFERENCES `t_user`(`id_user`) ON UPDATE NO ACTION ON DELETE NO ACTION )");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '34ce3519d4ed82ad65e19ba8d0dd5588')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '5ab6f67e25ab8a6d487698e5e4b9fbf8')");
       }
 
       @Override
@@ -98,7 +98,7 @@ public final class D3vsDataBase_Impl extends D3vsDataBase {
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
         final HashMap<String, TableInfo.Column> _columnsTUser = new HashMap<String, TableInfo.Column>(8);
         _columnsTUser.put("id_user", new TableInfo.Column("id_user", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsTUser.put("discriminacao", new TableInfo.Column("discriminacao", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsTUser.put("discriminacao", new TableInfo.Column("discriminacao", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsTUser.put("nm_usuario", new TableInfo.Column("nm_usuario", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsTUser.put("dt_nascimento", new TableInfo.Column("dt_nascimento", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsTUser.put("nr_cpf", new TableInfo.Column("nr_cpf", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -181,7 +181,7 @@ public final class D3vsDataBase_Impl extends D3vsDataBase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "34ce3519d4ed82ad65e19ba8d0dd5588", "1f983e2f3bc6f7183dce6ccad8600ad5");
+    }, "5ab6f67e25ab8a6d487698e5e4b9fbf8", "2e9cbdc2442fe0031fa6db9b00495408");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

@@ -14,6 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.gms.common.SignInButton;
 import com.rocketteam.d3vs.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -27,7 +28,7 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView Bemvind;
 
   @NonNull
-  public final AppCompatButton btGoogle;
+  public final SignInButton btGoogle;
 
   @NonNull
   public final AppCompatButton btLoginEntrar;
@@ -45,15 +46,12 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final Toolbar toolbar2;
 
   @NonNull
-  public final Toolbar toolbar3;
-
-  @NonNull
   public final TextView vmCom;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull TextView Bemvind,
-      @NonNull AppCompatButton btGoogle, @NonNull AppCompatButton btLoginEntrar,
+      @NonNull SignInButton btGoogle, @NonNull AppCompatButton btLoginEntrar,
       @NonNull EditText dsEmail, @NonNull EditText dsSenha, @NonNull ImageView imageView,
-      @NonNull Toolbar toolbar2, @NonNull Toolbar toolbar3, @NonNull TextView vmCom) {
+      @NonNull Toolbar toolbar2, @NonNull TextView vmCom) {
     this.rootView = rootView;
     this.Bemvind = Bemvind;
     this.btGoogle = btGoogle;
@@ -62,7 +60,6 @@ public final class ActivityLoginBinding implements ViewBinding {
     this.dsSenha = dsSenha;
     this.imageView = imageView;
     this.toolbar2 = toolbar2;
-    this.toolbar3 = toolbar3;
     this.vmCom = vmCom;
   }
 
@@ -100,7 +97,7 @@ public final class ActivityLoginBinding implements ViewBinding {
       }
 
       id = R.id.btGoogle;
-      AppCompatButton btGoogle = ViewBindings.findChildViewById(rootView, id);
+      SignInButton btGoogle = ViewBindings.findChildViewById(rootView, id);
       if (btGoogle == null) {
         break missingId;
       }
@@ -135,12 +132,6 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.toolbar3;
-      Toolbar toolbar3 = ViewBindings.findChildViewById(rootView, id);
-      if (toolbar3 == null) {
-        break missingId;
-      }
-
       id = R.id.vm_com;
       TextView vmCom = ViewBindings.findChildViewById(rootView, id);
       if (vmCom == null) {
@@ -148,7 +139,7 @@ public final class ActivityLoginBinding implements ViewBinding {
       }
 
       return new ActivityLoginBinding((ConstraintLayout) rootView, Bemvind, btGoogle, btLoginEntrar,
-          dsEmail, dsSenha, imageView, toolbar2, toolbar3, vmCom);
+          dsEmail, dsSenha, imageView, toolbar2, vmCom);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

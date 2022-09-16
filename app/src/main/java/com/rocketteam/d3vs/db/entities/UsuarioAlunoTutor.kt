@@ -20,4 +20,9 @@ data class UsuarioAluno (@Embedded var Aluno: Aluno,
                              parentColumn = "t_user_id_user",
                              entityColumn = "id_user"
                          )
-                         var Usuario: Usuario)
+                         var Usuario: Usuario,
+                         @Relation(
+                             parentColumn = "t_user_id_user",
+                             entityColumn = "t_aluno_t_user_id_user"
+                         )
+                         var Interesses: List<Interesses>)

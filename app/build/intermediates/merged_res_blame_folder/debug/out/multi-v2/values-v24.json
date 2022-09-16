@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.rocketteam.d3vs.app-mergeDebugResources-48:/values-v24/values-v24.xml",
+            "outputFile": "com.rocketteam.d3vs.app-mergeDebugResources-51:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\thiag\\.gradle\\caches\\transforms-3\\c9a3162968171fab53e2ed2a1055277f\\transformed\\appcompat-1.6.0-beta01\\res\\values-v24\\values-v24.xml",
+                    "source": "/home/thiago/.gradle/caches/transforms-3/c9a3162968171fab53e2ed2a1055277f/transformed/appcompat-1.6.0-beta01/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\thiag\\.gradle\\caches\\transforms-3\\d1c30a6505feb0f1b20d8094b3e933e7\\transformed\\material-1.8.0-alpha01\\res\\values-v24\\values-v24.xml",
+                    "source": "/home/thiago/.gradle/caches/transforms-3/d1c30a6505feb0f1b20d8094b3e933e7/transformed/material-1.8.0-alpha01/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

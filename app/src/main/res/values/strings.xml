@@ -3,7 +3,6 @@
     <string name="registrar">Registrar</string>
     <string name="d3vs">D3VS</string>
     <string name="todo">TODO</string>
-    <string name="registrar2">Registrar</string>
     <string name="entrar">Entrar</string>
     <string name="title_activity_cadastro">Cadastro</string>
     <!-- Strings used for fragments for navigation -->
@@ -46,7 +45,7 @@
     <string name="menu_perfil">Perfil</string>
     <string name="menu_busca">Busca</string>
     <string name="menu_historico">Historico</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nome_do_usuario">Nome do usuario</string>
     <string name="email_do_usuario">Email do usuario</string>
@@ -59,4 +58,11 @@
     <string name="sem_historico">Sem Historico</string>
     <string name="todo7">TODO</string>
     <string name="encontre_um_tutor">Encontre um Tutor</string>
+
+    <string name="dadosIncorretos">\"Email/Senha incorreto/a\"</string>
+    <string name="erroCriarPerfil">Erro ao criar perfil.</string>
+    <string name="cadastradoSucesso">Cadastrado com sucesso.</string>
+    <string name="NaoLogado">Login cancelado</string>
+    <string name="emailAlunoJaRegistrado">Esse email já está cadastrado para um aluno!</string>
+    <string name="emailTutorJaRegistrado">Esse email já está cadastrado para um tutor!</string>
 </resources>

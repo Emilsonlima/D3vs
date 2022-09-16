@@ -1,6 +1,8 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color branquinha
+color cinzinha
 color purple_200
 color purple_500
 color purple_700
@@ -31,7 +33,6 @@ id CriarPerfil
 id FotoTutor
 id IdadeUs
 id Interesse1
-id Interesse2
 id bottom_navigation
 id btEntrar
 id btEstudante
@@ -61,7 +62,6 @@ id imageView
 id imageView2
 id imageView3
 id imagehome
-id interesse3
 id layout_recycler
 id logo
 id menu_busca
@@ -72,10 +72,10 @@ id nmUsuario
 id nm_tutor
 id recyclerView_tutores
 id scrollView1
+id scrollView2
 id textView
 id toolbar
 id toolbar2
-id toolbar3
 id toolbar4
 id vm_com
 layout activity_cadastro
@@ -92,13 +92,16 @@ menu bottom_navigation_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_main
+string NaoLogado
 string app_name
 string bem_vindo_a_de_volta
+string cadastradoSucesso
 string continuar_com_o_goggle
 string criar_conta
 string criar_perfil
 string crie_seu_perfil
 string d3vs
+string dadosIncorretos
 string data_de_nascimento
 string descri_o
 string digite_seu_cpf
@@ -107,10 +110,13 @@ string digite_seu_nome
 string digite_sua_senha
 string editar_perfil
 string email
+string emailAlunoJaRegistrado
+string emailTutorJaRegistrado
 string email_do_usuario
 string encontre_um_tutor
 string entrar
 string entrar1
+string erroCriarPerfil
 string estudante
 string first_fragment_label
 string hello_blank_fragment
@@ -131,7 +137,6 @@ string ou
 string previous
 string qualifica_es
 string registrar
-string registrar2
 string salvar
 string second_fragment_label
 string sem_historico

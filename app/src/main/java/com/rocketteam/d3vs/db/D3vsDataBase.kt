@@ -7,7 +7,7 @@ import androidx.room.TypeConverters
 import com.rocketteam.d3vs.db.converter.converters
 import com.rocketteam.d3vs.db.entities.*
 
-@Database(entities = [Usuario::class, Aluno::class, Tutor::class, Interesses::class, Qualificacoes::class, Aula::class], version = 8)
+@Database(entities = [Usuario::class, Aluno::class, Tutor::class, Interesses::class, Qualificacoes::class, Aula::class], version = 9)
 @TypeConverters(converters::class)
 abstract class D3vsDataBase : RoomDatabase() {
 
@@ -20,7 +20,7 @@ abstract class D3vsDataBase : RoomDatabase() {
                     Context,
                     D3vsDataBase::class.java,
                     "org.d3vs"
-                ).build()
+                ).allowMainThreadQueries().fallbackToDestructiveMigration().build()
             return Instance!!
         }
     }

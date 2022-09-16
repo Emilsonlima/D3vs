@@ -8,6 +8,7 @@ abstract class TutorDAO {
 
     @Transaction
     open fun insert(Tutor: Tutor, Usuario: Usuario, Qualificacoes: Array<Qualificacoes>) {
+        Usuario.Discriminacao = "prof"
         val id = insert(Usuario);
 
         Tutor.Id = id.toInt();
@@ -41,10 +42,15 @@ abstract class TutorDAO {
     @Update
     abstract fun updateUsuario(Usuario: Usuario)
 
-    @Query("select * from t_user, t_prof where id_user = :Id")
+    @Query("select * from t_user, t_prof where id_user = :Id and discriminacao = 'prof'")
     abstract fun findById(Id: Int) : UsuarioTutor
 
-    @Query("select * from t_user, t_prof")
+    @Query("select * " +
+            "from t_user u inner join t_prof a on (a.t_user_id_user = u.id_user) " +
+            "where ds_email = :Email and discriminacao = 'prof'")
+    abstract fun findByEmail(Email: String): UsuarioTutor?
+
+    @Query("select * from t_user, t_prof where discriminacao = 'prof'")
     abstract fun listAll(): List<UsuarioTutor>
 
 }
@@ -53,11 +59,28 @@ abstract class TutorDAO {
 abstract class AlunoDAO {
 
     @Transaction
-    open fun insert(Aluno: Aluno, Usuario: Usuario, Interesses: Interesses){
+    open fun insert(Aluno: Aluno, Usuario: Usuario, Interesses: Array<Interesses>) {
+        Usuario.Discriminacao = "aluno"
+        val id = insert(Usuario);
 
+        Aluno.Id = id.toInt();
+        insert(Aluno);
+
+        Interesses.forEach {
+            it.IdAluno = id.toInt();
+        }
+        insert(Interesses);
     }
 
-    @Transaction
+    @Insert
+    abstract fun insert(Aluno: Aluno): Long
+
+    @Insert
+    abstract fun insert(Usuario: Usuario): Long
+
+    @Insert
+    abstract fun insert(Interesses: Array<Interesses>): Array<Long>
+
     @Delete
     abstract fun delete(Aluno: Aluno)
 
@@ -71,12 +94,25 @@ abstract class AlunoDAO {
     @Update
     abstract fun updateUsuario(Usuario: Usuario)
 
-    @Transaction
     @Query("select * from t_user, t_aluno where id_user = :Id")
-    abstract fun findById(Id: Int): UsuarioAluno
+    abstract fun findById(Id: Int) : UsuarioAluno
 
-    @Transaction
+    @Query("select * " +
+            "from t_user u inner join t_aluno a on (a.t_user_id_user = u.id_user) " +
+            "where ds_email = :Email and discriminacao = 'aluno'")
+    abstract fun findByEmail(Email: String): UsuarioAluno?
+
     @Query("select * from t_user, t_aluno")
-    abstract fun listAll(): Array<UsuarioAluno>?
+    abstract fun listAll(): List<UsuarioAluno>
+
+    @Query("select count(*) " +
+            "from t_user u inner join t_aluno a on (a.t_user_id_user = u.id_user) " +
+            "where ds_email = :Email and ds_senha = :Senha and discriminacao = 'aluno'")
+    abstract fun autenticar(Email: String, Senha: String): Boolean
+
+    @Query("select count(*) " +
+            "from t_user u inner join t_aluno a on (a.t_user_id_user = u.id_user) " +
+            "where googleauth = :GoogleAuth and discriminacao = 'aluno'")
+    abstract fun autenticar(GoogleAuth: String): Boolean
 
 }

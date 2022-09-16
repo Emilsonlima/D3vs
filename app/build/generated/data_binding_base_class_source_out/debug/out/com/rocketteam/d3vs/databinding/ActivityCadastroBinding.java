@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,6 +15,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.gms.common.SignInButton;
 import com.rocketteam.d3vs.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -24,7 +26,7 @@ public final class ActivityCadastroBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatButton btGoogle;
+  public final SignInButton btGoogle;
 
   @NonNull
   public final AppCompatButton btLoginEntrar;
@@ -39,21 +41,25 @@ public final class ActivityCadastroBinding implements ViewBinding {
   public final ImageView imageView2;
 
   @NonNull
+  public final ScrollView scrollView2;
+
+  @NonNull
   public final Toolbar toolbar2;
 
   @NonNull
   public final TextView vmCom;
 
   private ActivityCadastroBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatButton btGoogle, @NonNull AppCompatButton btLoginEntrar,
+      @NonNull SignInButton btGoogle, @NonNull AppCompatButton btLoginEntrar,
       @NonNull EditText dsEmail, @NonNull EditText dsSenha, @NonNull ImageView imageView2,
-      @NonNull Toolbar toolbar2, @NonNull TextView vmCom) {
+      @NonNull ScrollView scrollView2, @NonNull Toolbar toolbar2, @NonNull TextView vmCom) {
     this.rootView = rootView;
     this.btGoogle = btGoogle;
     this.btLoginEntrar = btLoginEntrar;
     this.dsEmail = dsEmail;
     this.dsSenha = dsSenha;
     this.imageView2 = imageView2;
+    this.scrollView2 = scrollView2;
     this.toolbar2 = toolbar2;
     this.vmCom = vmCom;
   }
@@ -86,7 +92,7 @@ public final class ActivityCadastroBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btGoogle;
-      AppCompatButton btGoogle = ViewBindings.findChildViewById(rootView, id);
+      SignInButton btGoogle = ViewBindings.findChildViewById(rootView, id);
       if (btGoogle == null) {
         break missingId;
       }
@@ -115,6 +121,12 @@ public final class ActivityCadastroBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.scrollView2;
+      ScrollView scrollView2 = ViewBindings.findChildViewById(rootView, id);
+      if (scrollView2 == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar2;
       Toolbar toolbar2 = ViewBindings.findChildViewById(rootView, id);
       if (toolbar2 == null) {
@@ -128,7 +140,7 @@ public final class ActivityCadastroBinding implements ViewBinding {
       }
 
       return new ActivityCadastroBinding((ConstraintLayout) rootView, btGoogle, btLoginEntrar,
-          dsEmail, dsSenha, imageView2, toolbar2, vmCom);
+          dsEmail, dsSenha, imageView2, scrollView2, toolbar2, vmCom);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

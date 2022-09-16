@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.rocketteam.d3vs.app-mergeDebugResources-48:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "com.rocketteam.d3vs.app-mergeDebugResources-51:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\thiag\\.gradle\\caches\\transforms-3\\c17bc79a942fea30ac29737c7fc58141\\transformed\\navigation-ui-2.5.2\\res\\values-en-rAU\\values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,116",
-                        "endOffsets": "156,273"
-                    },
-                    "to": {
-                        "startLines": "29,30",
-                        "startColumns": "4,4",
-                        "startOffsets": "2762,2868",
-                        "endColumns": "105,116",
-                        "endOffsets": "2863,2980"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\thiag\\.gradle\\caches\\transforms-3\\c9a3162968171fab53e2ed2a1055277f\\transformed\\appcompat-1.6.0-beta01\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "/home/thiago/.gradle/caches/transforms-3/c9a3162968171fab53e2ed2a1055277f/transformed/appcompat-1.6.0-beta01/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\thiag\\.gradle\\caches\\transforms-3\\63cc23c7f76a96e9e90dd731baa10e35\\transformed\\core-1.9.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "/home/thiago/.gradle/caches/transforms-3/c17bc79a942fea30ac29737c7fc58141/transformed/navigation-ui-2.5.2/res/values-en-rAU/values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,116",
+                        "endOffsets": "156,273"
+                    },
+                    "to": {
+                        "startLines": "29,30",
+                        "startColumns": "4,4",
+                        "startOffsets": "2762,2868",
+                        "endColumns": "105,116",
+                        "endOffsets": "2863,2980"
+                    }
+                },
+                {
+                    "source": "/home/thiago/.gradle/caches/transforms-3/63cc23c7f76a96e9e90dd731baa10e35/transformed/core-1.9.0/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
